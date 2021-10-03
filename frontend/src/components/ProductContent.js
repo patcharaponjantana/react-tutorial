@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from 'antd';
 
-import { Button, Content } from './Style/main'
+import { Button, Content } from './Style'
 
 const ProductContent = ({data}) => {
 

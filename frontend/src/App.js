@@ -8,7 +8,7 @@ import Home from './views/Home'
 import About from './views/About'
 import Product from './views/Product'
 import Career from './views/Career'
-import { Header, Menu, Footer, MainContent } from './components/Style/main'
+import { Header, Menu, Footer, MainContent } from './components/Style'
 
 function App() {
 

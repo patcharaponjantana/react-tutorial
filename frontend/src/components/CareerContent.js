@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Layout } from 'antd';
 
 import { numberWithCommas } from '../utils/utils'
-import { Button, Content } from './Style/main'
+import { Button, Content } from './Style'
 
 const CareerContent = ({data}) => {    
 

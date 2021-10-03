@@ -35,9 +35,10 @@ export const MainContent = styled.div`
 export const Content = styled.div`
     background-color: ${contentBgColor};
     padding: 24px;
+    min-height: 250px
 `;
 
-export const Footer = styled.div`
+export const Footer = styled(FooterAnt)`
     background-color: ${bgColor};
     text-align: center;
     padding: 30px;

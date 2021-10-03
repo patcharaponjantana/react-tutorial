@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Content } from '../Style/main'
+import { Content } from '../Style'
 
 const NormalLayout =({children}) =>{
 
