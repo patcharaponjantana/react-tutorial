@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Layout } from 'antd';
 
-import appStyles from '../assets/css/main.module.css';
-import { Button } from './Style/main'
-
-const { Content } = Layout;
+import { Button, Content } from './Style/main'
 
 const ProductContent = ({data}) => {
 
@@ -15,13 +12,7 @@ const ProductContent = ({data}) => {
     return (
       <div>
         <Layout style={{ paddingLeft: '24px'}}>
-            <Content
-                className={appStyles['content-background']}
-                style={{
-                    padding: "24px",
-                    minHeight: 280,
-                }}
-            >
+            <Content>
                 <div>Key: {data.id} </div> 
                 <div>Name: {data.name} </div> 
                 <div>Group: {data.group} </div> 

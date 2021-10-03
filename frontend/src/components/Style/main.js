@@ -29,11 +29,12 @@ export const Button = styled(ButtonAnt)`
 `;
 
 export const MainContent = styled.div`
-    background-color: red;
+    background-color: ${bgColor};
 `;
 
 export const Content = styled.div`
-    background-color: ${bgColor};
+    background-color: ${contentBgColor};
+    padding: 24px;
 `;
 
 export const Footer = styled.div`

@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-import appStyles from '../../assets/css/main.module.css';
-
 const MenuLayout = ({children}) =>{
 
     const contentLayout = {
-        margin: "24px",
-        backgroundColor: "white"
+        margin: "24px"
     }
-
+    
     return(
-        <div style={contentLayout} className={appStyles['content-background']}>
+        <div style={contentLayout}>
             {children}
         </div>
     )

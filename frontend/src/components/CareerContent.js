@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { Layout } from 'antd';
 
-import appStyles from '../assets/css/main.module.css';
 import { numberWithCommas } from '../utils/utils'
-import { Button } from './Style/main'
-
-const { Content } = Layout;
+import { Button, Content } from './Style/main'
 
 const CareerContent = ({data}) => {    
 
@@ -16,13 +13,7 @@ const CareerContent = ({data}) => {
     return (
       <div>
         <Layout style={{ paddingLeft: '24px'}}>
-            <Content
-                className={appStyles['content-background']}
-                style={{
-                    padding: "24px",
-                    minHeight: 280,
-                }}
-            >
+            <Content>
               { // check data is seted (not undefined)
                 data && (
                   <>
