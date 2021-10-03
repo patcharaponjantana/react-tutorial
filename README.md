@@ -7,10 +7,8 @@ npm install --global yarn
 
 ### 2.Create React App
 ```bash
-mkdir react-tutorial
-cd react-tutorial
-npx create-react-app frontend
-cd frontend
+git clone https://github.com/patcharaponjantana/react-tutorial
+cd react-tutorial/frontend
 yarn
 yarn start
 ```
