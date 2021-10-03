@@ -5,7 +5,7 @@
 npm install --global yarn
 ```
 
-### 2.Create React App
+### 2.Run React App
 ```bash
 git clone https://github.com/patcharaponjantana/react-tutorial
 cd react-tutorial/frontend
