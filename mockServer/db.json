@@ -1,0 +1,74 @@
+{   
+    "menu-product": [
+        {
+            "id": 1,
+            "name": "Food",
+            "product_list": [
+                { "id": 1, "name": "Hamburger" },
+                { "id": 2, "name": "Pasta" }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Electrical Appliance",
+            "product_list": [
+                { "id": 3, "name": "Refrigerator" },
+                { "id": 4, "name": "Air Conditioner" }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Furniture",
+            "product_list": [
+                { "id": 5, "name": "Sofa" },
+                { "id": 6, "name": "Table" }
+            ]
+        }
+    ],
+    "product": [
+        { "id": 1, "name": "Hamburger", "group": "Food", "description": "Description for Hamburger" },
+        { "id": 2, "name": "Pasta", "group": "Food", "description": "Description for Pasta" },
+        { "id": 3, "name": "Refrigerator", "group": "Electrical Appliance", "description": "Description for Refrigerator" },
+        { "id": 4, "name": "Air Conditioner", "group": "Electrical Appliance", "description": "Description for Air Conditioner" },
+        { "id": 5, "name": "Sofa", "group": "Furniture", "description": "Description for Sofa" },
+        { "id": 6, "name": "Table", "group": "Furniture", "description": "Description for Table" }
+    ],
+    "menu-career": [
+        {
+            "id": 1,
+            "name": "Engineer",
+            "product_list": [
+                { "id": 1, "name": "Mechanical Engineering" }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Finance",
+            "product_list": [
+                { "id": 2, "name": "Finance Manager" },
+                { "id": 3, "name": "Accounting Specialist" }
+            ]
+        }
+    ],
+    "career": [
+        { 
+            "id": 1,
+            "name": "Mechanical Engineering",
+            "description": "Job Description for Mechanical Engineering",
+            "min-salary": 20000,
+            "max-salary": 35000
+        },
+        {   "id": 2,
+            "name": "Finance Manager",
+            "description": "Job Description for Finance Manager",
+            "min-salary": 35000,
+            "max-salary": 50000
+        },
+        {   "id": 3,
+            "name": "Accounting Specialist",
+            "description": "Job Description for Accounting Specialist",
+            "min-salary": 25000,
+            "max-salary": 35000
+        }
+    ]
+}
