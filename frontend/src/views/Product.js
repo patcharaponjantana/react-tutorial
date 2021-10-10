@@ -36,7 +36,8 @@ const Product = () => {
 
     console.log('render Product');
 
-    return (<Row>
+    return (
+        <Row>
             <Col xl={4} xs={24} ><SideMenu menudata={menudata} onMenuClick={onMenuClick} /></Col>
             <Col xl={20} xs={24} ><ProductContent data={productData} /></Col>
         </Row>

@@ -10,6 +10,7 @@ const NormalLayout =({children}) =>{
     
     return(
         <Content style={contentLayout}>      
+            Normal
             {children}
         </Content>
     )

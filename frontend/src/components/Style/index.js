@@ -9,7 +9,7 @@ import {
 const { Header: HeaderAnt, Footer: FooterAnt } = LayoutAnt;
 
 
-const primaryColor = 'blue';
+const primaryColor = 'red';
 const secondaryColor = 'white';
 const bgColor = '#f0f2f5';
 const contentBgColor = 'white';
