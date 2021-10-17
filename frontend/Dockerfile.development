@@ -3,3 +3,7 @@ FROM node:15.0-alpine
 WORKDIR /code
 
 ADD . /code
+
+CMD [ "npm", "install", "--global", "yarn" ]
+CMD [ "yarn" ]
+CMD [ "yarn", "start" ]

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_BACKEND_ENDPOINT //'http://localhost:8000';
+const API_URL = process.env.REACT_APP_BACKEND_ENDPOINT;
 const headers = { 'Content-Type': 'application/json' };
 console.log('API_URL', API_URL)
 const getMenuProduct = () => axios.get(`${API_URL}/menu-product`, { headers });

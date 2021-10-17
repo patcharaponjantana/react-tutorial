@@ -10,7 +10,6 @@ services:
             - 5432:5432
 
     frontend:
-        # build: ./frontend/Dockerfile.production
         build: 
             context: .
             dockerfile: ./frontend/Dockerfile.production     
