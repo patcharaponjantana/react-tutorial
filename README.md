@@ -42,26 +42,25 @@ json-server --host 0.0.0.0 --watch db.json --port 8000
 
 # Run with Docker
 ## 1. build image
-
 ```bash
 docker build -f ./frontend/Dockerfile.development -t react-tutorial_frontend:latest ./frontend
 docker build -f ./mockServer/Dockerfile -t react-tutorial_mockserver:latest ./mockServer
 ```
-
+## 2. check image
 ```bash
 docker images
 ```
-
+## 3. run container
 ```bash
 docker run -p 80:3000 -d react-tutorial_frontend:latest 
 docker run -p 8000:8000 -d react-tutorial_mockserver:latest 
 ```
-
+## 4. check container is running
 ```bash
 docker container ls
 ```
 
-check https://localhost and https://localhost:8000
+Now the server will be run on https://localhost and https://localhost:8000
 
 ### Run with Docker Compose
 docker-compose --env-file .env.dev up
