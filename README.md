@@ -21,3 +21,23 @@ yarn global add json-server
 cd mockserver
 json-server --host 0.0.0.0 --watch db.json --port 8000
 ```
+
+
+### Run with Docker
+
+```
+docker build . -t <your username>/node-web-app
+docker images # check your image is exist
+docker run -p 8100:8080 -d <your username>/node-web-app
+docker ps # check your container is exist
+docker logs <container id> # check logs
+docker exec -it <container id> bash # for debuging
+```
+
+
+```
+curl -i localhost:8100
+```
+
+### Run with Docker Compose
+

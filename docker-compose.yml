@@ -1,0 +1,26 @@
+version: '3.3'
+services:
+    postgres:
+        image: postgres
+        env_file:
+            - ./.env.dev
+        networks:
+            - internal_service
+        ports:
+            - 5432:5432
+
+    frontend:
+        build: ./frontend
+        environment:
+        - REACT_APP_BACKEND_IP=${REACT_APP_BACKEND_IP}
+        command: sh /code/run.sh
+        volumes:
+        - ./frontend:/code
+        ports:
+        - 80:3000
+        networks:
+        - internal_service
+
+networks:
+  internal_service:
+    external: true
