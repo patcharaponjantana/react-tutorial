@@ -40,4 +40,5 @@ curl -i localhost:8100
 ```
 
 ### Run with Docker Compose
-
+docker-compose --env-file .env.dev up
+docker network create internal_service
