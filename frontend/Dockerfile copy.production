@@ -3,11 +3,11 @@
 FROM node:15.0-alpine AS builder
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-COPY ./frontend/package.json .
-COPY ./frontend/yarn.lock .
-COPY .env.production .
+COPY package.json .
+COPY yarn.lock .
+COPY ../.env.production .
 RUN yarn install --ignore-platform
-COPY ./frontend .
+COPY . .
 RUN yarn build
 
 # 2nd Stage

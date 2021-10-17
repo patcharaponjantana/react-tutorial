@@ -3,33 +3,33 @@ services:
     postgres:
         image: postgres
         env_file:
-            - ./.env.dev
+            - ./.env.development
         networks:
             - internal_service
         ports:
             - 5432:5432
 
     frontend:
-        build: ./frontend
-        environment:
-        - REACT_APP_BACKEND_ENDPOINT=${REACT_APP_BACKEND_ENDPOINT}
+        build: ./frontend/Dockerfile.development
+        env_file:
+            - ./.env.development
         command: sh /code/run.sh
         volumes:
-        - ./frontend:/code
+            - ./frontend:/code
         ports:
-        - 80:3000
+            - 80:3000
         networks:
-        - internal_service
+            - internal_service
 
     backend:
         build: ./backend
         command: node server.js
         volumes:
-        - ./backend:/usr/src/app
+            - ./backend:/usr/src/app
         ports:
-        - 8080:8080
+            - 8080:8080
         networks:
-        - internal_service
+            - internal_service
 
     mockserver:
       build: ./mockServer
