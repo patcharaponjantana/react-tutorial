@@ -1,14 +1,5 @@
 version: '3.3'
 services:
-    postgres:
-        image: postgres
-        env_file:
-            - ./.env.development
-        networks:
-            - internal_service
-        ports:
-            - 5432:5432
-
     frontend:
         build: ./frontend/Dockerfile.development
         env_file:
@@ -21,16 +12,6 @@ services:
         networks:
             - internal_service
 
-    backend:
-        build: ./backend
-        command: node server.js
-        volumes:
-            - ./backend:/usr/src/app
-        ports:
-            - 8080:8080
-        networks:
-            - internal_service
-
     mockserver:
       build: ./mockServer
       command: sh /code/run.sh
@@ -40,8 +21,6 @@ services:
       - 8000:8000
       networks:
       - internal_service
-
-
     
 
 networks:

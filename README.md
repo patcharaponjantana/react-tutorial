@@ -62,6 +62,5 @@ docker container ls
 
 Now the server will be run on https://localhost and https://localhost:8000
 
-### Run with Docker Compose
-docker-compose --env-file .env.dev up
-docker network create internal_service
+# Run with Docker Compose
+docker-compose -f docker-compose.production.yml up
